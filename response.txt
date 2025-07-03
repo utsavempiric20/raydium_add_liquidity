@@ -1,0 +1,259 @@
+connect to rpc https://mainnet.helius-rpc.com/?api-key=88e029e3-9c89-4b1a-a3f1-df636c0c0d44 in mainnet
+(node:30287) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+<ref *1> Fr {
+  rawBalances: Map(0) {},
+  _connection: Connection {
+    _commitment: 'confirmed',
+    _confirmTransactionInitialTimeout: undefined,
+    _rpcEndpoint: 'https://mainnet.helius-rpc.com/?api-key=88e029e3-9c89-4b1a-a3f1-df636c0c0d44',
+    _rpcWsEndpoint: 'wss://mainnet.helius-rpc.com/?api-key=88e029e3-9c89-4b1a-a3f1-df636c0c0d44',
+    _rpcClient: ClientBrowser {
+      options: [Object],
+      callServer: [AsyncFunction (anonymous)]
+    },
+    _rpcRequest: [Function (anonymous)],
+    _rpcBatchRequest: [Function (anonymous)],
+    _rpcWebSocket: RpcWebSocketClient {
+      _events: [Events <Complex prototype>],
+      _eventsCount: 10,
+      address: 'wss://mainnet.helius-rpc.com/?api-key=88e029e3-9c89-4b1a-a3f1-df636c0c0d44',
+      rpc_id: 0,
+      queue: {},
+      options: undefined,
+      autoconnect: false,
+      ready: false,
+      reconnect: true,
+      reconnect_timer_id: undefined,
+      reconnect_interval: 1000,
+      max_reconnects: Infinity,
+      rest_options: {},
+      current_reconnects: 0,
+      generate_request_id: [Function (anonymous)],
+      socket: undefined,
+      webSocketFactory: [Function: webSocketFactory],
+      dataPack: DefaultDataPack {},
+      underlyingSocket: undefined
+    },
+    _rpcWebSocketConnected: false,
+    _rpcWebSocketHeartbeat: null,
+    _rpcWebSocketIdleTimeout: null,
+    _rpcWebSocketGeneration: 0,
+    _disableBlockhashCaching: false,
+    _pollingBlockhash: false,
+    _blockhashInfo: {
+      latestBlockhash: null,
+      lastFetch: 0,
+      transactionSignatures: [],
+      simulatedSignatures: []
+    },
+    _nextClientSubscriptionId: 0,
+    _subscriptionDisposeFunctionsByClientSubscriptionId: {},
+    _subscriptionHashByClientSubscriptionId: {},
+    _subscriptionStateChangeCallbacksByHash: {},
+    _subscriptionCallbacksByServerSubscriptionId: {},
+    _subscriptionsByHash: {},
+    _subscriptionsAutoDisposedByRpc: Set(0) {},
+    getBlockHeight: [AsyncFunction (anonymous)]
+  },
+  cluster: 'mainnet',
+  _owner: Jt { _owner: Keypair { _keypair: [Object] } },
+  _signAllTransactions: undefined,
+  blockhashCommitment: 'finalized',
+  loopMultiTxStatus: undefined,
+  api: Yo {
+    cluster: 'mainnet',
+    urlConfigs: {},
+    logCount: 1000,
+    api: [Function: wrap] {
+      constructor: [Function: wrap],
+      request: [Function: wrap],
+      _request: [Function: wrap],
+      getUri: [Function: wrap],
+      delete: [Function: wrap],
+      get: [Function: wrap],
+      head: [Function: wrap],
+      options: [Function: wrap],
+      post: [Function: wrap],
+      postForm: [Function: wrap],
+      put: [Function: wrap],
+      putForm: [Function: wrap],
+      patch: [Function: wrap],
+      patchForm: [Function: wrap],
+      defaults: [Object],
+      interceptors: [Object],
+      create: [Function: create]
+    }
+  },
+  _apiCacheTime: 300000,
+  logger: { farm: { util: [Gr] } },
+  farm: or {
+    disabled: false,
+    scope: [Circular *1],
+    logger: Gr { logLevel: 0, name: 'Raydium_Farm' }
+  },
+  account: er {
+    disabled: false,
+    scope: [Circular *1],
+    logger: Gr { logLevel: 0, name: 'Raydium_Account' },
+    _tokenAccounts: [],
+    _tokenAccountRawInfos: [],
+    _accountListener: [],
+    _clientOwnedToken: false,
+    _notSubscribeAccountChange: true,
+    _accountFetchTime: 0
+  },
+  liquidity: Ar {
+    disabled: false,
+    scope: [Circular *1],
+    logger: Gr { logLevel: 0, name: 'Raydium_LiquidityV2' },
+    stableLayout: Ii { _layoutData: [Object], connection: [Connection] }
+  },
+  token: Vr {
+    disabled: false,
+    scope: [Circular *1],
+    logger: Gr { logLevel: 0, name: 'Raydium_tokenV2' },
+    _tokenList: [],
+    _tokenMap: Map(0) {},
+    _blackTokenMap: Set(0) {},
+    _mintGroup: { official: Set(0) {}, jup: Set(0) {}, extra: Set(0) {} },
+    _whiteMap: Set(0) {},
+    _extraTokenList: []
+  },
+  tradeV2: Cr {
+    disabled: false,
+    scope: [Circular *1],
+    logger: Gr { logLevel: 0, name: 'Raydium_tradeV2' }
+  },
+  clmm: Ao {
+    disabled: false,
+    scope: [Circular *1],
+    logger: Gr { logLevel: 0, name: 'Raydium_clmm' }
+  },
+  cpmm: xr {
+    disabled: false,
+    scope: [Circular *1],
+    logger: Gr { logLevel: 0, name: 'Raydium_cpmm' }
+  },
+  utils1216: Mt {
+    disabled: false,
+    scope: [Circular *1],
+    logger: Gr { logLevel: 0, name: 'Raydium_utils1216' }
+  },
+  marketV2: go {
+    disabled: false,
+    scope: [Circular *1],
+    logger: Gr { logLevel: 0, name: 'Raydium_marketV2' }
+  },
+  ido: Bo {
+    disabled: false,
+    scope: [Circular *1],
+    logger: Gr { logLevel: 0, name: 'Raydium_ido' }
+  },
+  launchpad: Er {
+    disabled: false,
+    scope: [Circular *1],
+    logger: Gr { logLevel: 0, name: 'Raydium_lauchpad' }
+  },
+  availability: {},
+  apiData: {}
+}
+{
+  type: 'Standard',
+  programId: '675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8',
+  id: '58oQChx4yWmvKdwLLZzBi4ChoCc2fqCUWBkwMihLYQo2',
+  mintA: {
+    chainId: 101,
+    address: 'So11111111111111111111111111111111111111112',
+    programId: 'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA',
+    logoURI: 'https://img-v1.raydium.io/icon/So11111111111111111111111111111111111111112.png',
+    symbol: 'WSOL',
+    name: 'Wrapped SOL',
+    decimals: 9,
+    tags: [],
+    extensions: {}
+  },
+  mintB: {
+    chainId: 101,
+    address: 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v',
+    programId: 'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA',
+    logoURI: 'https://img-v1.raydium.io/icon/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v.png',
+    symbol: 'USDC',
+    name: 'USD Coin',
+    decimals: 6,
+    tags: [ 'hasFreeze' ],
+    extensions: {}
+  },
+  price: 155.91766723728344,
+  mintAmountA: 47719.904125867,
+  mintAmountB: 7440376.132092,
+  feeRate: 0.0025,
+  openTime: '0',
+  tvl: 14867540.11,
+  day: {
+    volume: 35774726.257506505,
+    volumeQuote: 35828216.82610535,
+    volumeFee: 89436.81564376685,
+    apr: 219.57,
+    feeApr: 219.57,
+    priceMin: 145.76255743076783,
+    priceMax: 178.57142857142858,
+    rewardApr: [ 0 ]
+  },
+  week: {
+    volume: 267524586.12868223,
+    volumeQuote: 267934529.37778735,
+    volumeFee: 668811.4653217044,
+    apr: 134.95,
+    feeApr: 134.95,
+    priceMin: 130,
+    priceMax: 178.57142857142858,
+    rewardApr: [ 0 ]
+  },
+  month: {
+    volume: 324689463.48178846,
+    volumeQuote: 325232501.21201295,
+    volumeFee: 811723.6587044698,
+    apr: 65.52,
+    feeApr: 65.52,
+    priceMin: 126.03758,
+    priceMax: 181.8181818181818,
+    rewardApr: [ 0 ]
+  },
+  pooltype: [ 'OpenBookMarket' ],
+  rewardDefaultPoolInfos: 'Ecosystem',
+  rewardDefaultInfos: [
+    {
+      mint: [Object],
+      perSecond: '1511172019',
+      startTime: '1747994400',
+      endTime: '1755770400'
+    }
+  ],
+  farmUpcomingCount: 1,
+  farmOngoingCount: 1,
+  farmFinishedCount: 23,
+  marketId: '8BnEgHoWFysVcuFFX7QztDmzuH8r5ZFvyP3sYwn1XTh6',
+  lpMint: {
+    chainId: 101,
+    address: '8HoQnePLqPj4M7PUDzfw8e3Ymdwgc7NLGnaTUapubyvu',
+    programId: 'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA',
+    logoURI: '',
+    symbol: 'SOL-USDC',
+    name: 'Raydium LP Token V4 (SOL-USDC)',
+    decimals: 9,
+    tags: [],
+    extensions: {}
+  },
+  lpPrice: 208.2063698735931,
+  lpAmount: 71407.710138646,
+  burnPercent: 0,
+  launchMigratePool: false
+}
+simulate tx string: [
+  'AWTOG1qO5O09/SHsBAbIOVJUlbP4AYoZ60nLf6cjSWw3hU+YnYXO9lC6PP884Nj586r+3XCS6JQyJks5hnOziA2AAQAHCxXK8BYSnGp/HhOF44KZ9PMjkk7BymJRPWJkmTFbI3eSjUmSaBrIy6dmsaCdVYwGIatsyWsPNKbQ0lR2Ne7H3MMImk4FBrxvKqAQAr2UAQeGyemUgIiijO7Um2uH+KDfqa8BH1dFaXd1eeFHrsStFMSteW0MTq+76cbjXn/uob06AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqYyXJY9OJInxuz0QKRSODYMLWhOZ2v8QhASOe9jb6fhZS9lJxDYCwz8gd5DtFqNSTKG5l1zxIaKpDP/sffi2is35LzkP+WCeitQ3u45MHxqkOsBdJDCMynfehRLFUJKS02rEw876nxm/VMjcD15NHO7lMn0mSCsp0rE8uqQ0RyGNaxAyMcl1BQzsjabeQDV8m8pg756PMxZaJVZlZSqCUzv+AAc55LMpqATPnmuDTArYSd1fQ8DGW06CB9ejk1SdCgUEAgABfAMAAAAVyvAWEpxqfx4TheOCmfTzI5JOwcpiUT1iZJkxWyN3kiAAAAAAAAAANWJyS2F0a1RackZwdXhYQ0g5UFRDc1NGR0FGZHZVWXUwYC4AAAAAAKUAAAAAAAAABt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKkFBAESABABAQYGAAIACwQFAQEHDgUMEQgNCw4PCQEDAgAKIQNAQg8AAAAAACVnAgAAAAAAAAAAAAAAAAD2WgIAAAAAAAUDAQAAAQkCjsYA8pzFnlrYt+4SwjzHO3pbiRRiRs3w8L+AY63zEnUAAgUbdKBRBb1r4/Ih5qIqV3w2XhA1CVfShRFhaYAsdOVUkQAFoJuhnp8BEA=='
+]
+liquidity added: {
+  txId: 'https://explorer.solana.com/tx/31ts2XWEWXrPaaPYAd9uHpJKGyUfh1Sn3EHJXo69ECt2xoKDazsyck9UPDbEQP36NfXHTdihuTc4LdkgkFHUNhBr'
+}
+[nodemon] clean exit - waiting for changes before restart

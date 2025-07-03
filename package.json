@@ -1,0 +1,36 @@
+{
+  "name": "add_liquidity_sol",
+  "version": "1.0.0",
+  "description": "TypeScript Node.js project",
+  "main": "dist/addLiquidity.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/addLiquidity.js",
+    "dev": "nodemon --exec ts-node src/addLiquidity.ts",
+    "dev:watch": "nodemon --watch src --ext ts --exec ts-node src/addLiquidity.ts",
+    "clean": "rm -rf dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typescript",
+    "nodejs",
+    "project"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "nodemon": "^3.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@raydium-io/raydium-sdk-v2": "^0.1.141-alpha",
+    "@solana/spl-token": "^0.4.13",
+    "@solana/web3.js": "^1.98.2",
+    "bn.js": "^5.2.2",
+    "bs58": "^6.0.0",
+    "decimal.js": "^10.5.0",
+    "dotenv": "^17.0.1"
+  }
+}
